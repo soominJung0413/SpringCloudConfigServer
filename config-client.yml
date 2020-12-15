@@ -1,6 +1,6 @@
 soomin:
   name: SooMin Jung
-  said: Spring Cloud Bus Connection :) 
+  said: Spring Cloud Bus Connection Test :) 
 
 spring:
  rabbitmq:
