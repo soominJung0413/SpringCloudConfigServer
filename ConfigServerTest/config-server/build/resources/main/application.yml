@@ -9,6 +9,16 @@ spring:
           uri: https://github.com/soominJung0413/SpringCloudConfigServer.git
   application:
     name: config-server
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"
 
 eureka:
   client:
