@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/soominJung0413/SpringCloudConfigServer.git
+  application:
+    name: config-server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_SERVER_LIST:http://localhost:8761/eureka/}
+    registry-fetch-interval-seconds: 10
